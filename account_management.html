@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management Services - Hussain bin Adnan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4B0082;
+            color: #FFD700;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background-color: #3A006A;
+            color: #FFD700;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        section {
+            flex: 1;
+            padding: 4rem 2rem;
+        }
+
+        .content {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #FFD700;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #E6E6FA;
+        }
+
+        .service-item {
+            display: inline-block;
+            width: calc(33.33% - 2rem);
+            margin: 1rem;
+            background: #3A006A;
+            padding: 1.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+            background-color: #5E2CA5;
+        }
+
+        .service-item img {
+            width: 80px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .service-item h3 {
+            color: #FFD700;
+            margin-top: 0.5rem;
+        }
+
+        .service-item p {
+            color: #E6E6FA;
+        }
+
+        footer {
+            background: #3A006A;
+            color: #FFD700;
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+        }
+
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #E6E6FA;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header h1 {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content p {
+                font-size: 1rem;
+            }
+
+            .service-item {
+                width: calc(50% - 2rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content h2 {
+                font-size: 1.2rem;
+            }
+
+            .content p {
+                font-size: 0.9rem;
+            }
+
+            .service-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Account Management Services</h1>
+    </header>
+
+    <section>
+        <div class="content">
+            <div class="service-item">
+                <img src="file:///C:/Users/hussa/Downloads/account%20management.jpeg" alt="Account Management Icon">
+                <h3>Account Management</h3>
+                <p>Efficiently manage your accounts to ensure smooth and effective operations.</p>
+            </div>
+            <div class="service-item">
+                <img src="file:///C:/Users/hussa/Downloads/client%20relationship.jpeg" alt="Client Relationship Icon">
+                <h3>Client Relationship</h3>
+                <p>Build strong client relationships through effective communication and management.</p>
+            </div>
+            <div class="service-item">
+                <img src="file:///C:/Users/hussa/Downloads/reporting.jpeg" alt="Reporting Icon">
+                <h3>Reporting</h3>
+                <p>Generate detailed reports to monitor account activities and performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact me: hussainba.2409@gmail.com</p>
+    </footer>
+
+</body>
+
+</html>

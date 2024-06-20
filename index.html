@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussain bin Adnan - Virtual Assistant Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4B0082;
+            color: #FFD700;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background-color: #3A006A;
+            color: #FFD700;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 4rem 2rem;
+        }
+        .intro {
+            text-align: center;
+            background-color: #3A006A;
+            color: #FFD700;
+            padding: 3rem 0;
+        }
+        .intro h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        .about, .services, .contact {
+            text-align: center;
+        }
+        .about h2, .services h2, .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .about p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #E6E6FA;
+            font-family: 'Lora', serif;
+        }
+        .services p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #E6E6FA;
+        }
+        .services .service-item {
+            display: inline-block;
+            width: 30%;
+            margin: 1.5%;
+            background: #3A006A;
+            padding: 1.5rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-align: center;
+            color: #FFD700;
+        }
+        .services .service-item:hover {
+            transform: translateY(-10px);
+            background-color: #2A0050;
+        }
+        .services .service-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .services .service-item h3 {
+            color: #FFD700;
+            margin-top: 1rem;
+        }
+        .social-links a {
+            margin: 0 1rem;
+            color: #FFD700;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #E6E6FA;
+        }
+        footer {
+            background: #3A006A;
+            color: #FFD700;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E6E6FA;
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        .contact-link {
+            display: block;
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: #FFD700;
+            transition: background-color 0.3s ease;
+        }
+        .contact-link:hover {
+            background-color: #3A006A;
+        }
+        .profile-img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            object-fit: cover;
+            border: 4px solid #FFD700;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header h1 {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .services .service-item {
+                width: 100%;
+                margin: 1rem 0;
+            }
+            section {
+                padding: 2rem 1rem;
+            }
+            .intro h2 {
+                font-size: 2rem;
+            }
+            .intro p {
+                font-size: 1rem;
+            }
+            .about h2, .services h2, .contact h2 {
+                font-size: 1.5rem;
+            }
+            .about p, .services p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .intro h2 {
+                font-size: 1.5rem;
+            }
+            .intro p {
+                font-size: 0.9rem;
+            }
+            .about h2, .services h2, .contact h2 {
+                font-size: 1.2rem;
+            }
+            .about p, .services p {
+                font-size: 0.9rem;
+            }
+            .social-links a {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hussain bin Adnan</h1>
+        <p>Virtual Assistant - Research, Scheduling, Account Management</p>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <img src="file:///C:/Users/hussa/Downloads/Untitled%20design.png" alt="Hussain bin Adnan" class="profile-img">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Discover how I can help you achieve your business goals with expert research, efficient scheduling, and dedicated account management.</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a highly dedicated and professional Virtual Assistant with a passion for excellence in administrative support. My expertise lies in providing thorough research, efficient scheduling, and meticulous account management services.</p>
+            <p>My commitment to quality and attention to detail ensures that I deliver top-notch assistance tailored to your specific needs. My approach is client-focused and proactive, aiming to streamline workflows and enhance productivity. I thrive on challenges and am adept at managing multiple tasks simultaneously, always maintaining a high level of accuracy and efficiency.</p>
+            <p>Whether you need comprehensive research, seamless scheduling, or effective account management, I am here to support your business goals and help you achieve success.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="service-item">
+                <a href="research.html">
+                    <img src="file:///C:/Users/hussa/Downloads/Hussain%20Bin%20Adnanxt.png" alt="Research">
+                    <h3>Research</h3>
+                    <p>Thorough and detailed research to support your projects and business needs.</p>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="scheduling.html">
+                    <img src="file:///C:/Users/hussa/Downloads/Hussain%20Bin%20Adnanxt%20(1).png" alt="Scheduling">
+                    <h3>Scheduling</h3>
+                    <p>Efficiently organizing your calendar and coordinating meetings.</p>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="account_management.html">
+                    <img src="file:///C:/Users/hussa/Downloads/Hussain%20Bin%20Adnanxt%20(2).png" alt="Account Management">
+                    <h3>Account Management</h3>
+                    <p>Managing your accounts to ensure smooth and effective operations.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to schedule a free consultation call, please feel free to reach out.</p>
+            <p style="font-size: 2rem; font-family: 'Playfair Display', serif;"><strong>Email:</strong> hussainba.2409@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact me: hussainba.2409@gmail.com</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/hussain.bin.adnan/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61561064075079" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/hussain-bin-adnan-014a20266/" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 Hussain bin Adnan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
